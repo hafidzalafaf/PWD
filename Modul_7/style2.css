@@ -1,0 +1,18 @@
+body {
+    background-color:blue;
+}
+h2 {
+    font-family: comic sans ms;
+    background-color: red;
+    text-align: center;
+}
+table {
+    background: grey;
+    border-collapse: collapse;
+}
+table tr td {
+    border: 1px dotted white;
+}
+.td {
+    font-weight: bold;
+}
