@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menghitung IPK</title>
+	<script language="javascript">
+		function ipk() {
+			var nilai;
+			nilai = document.myform.hitung_ipk.value;
+			if (nilai >= 0) {
+				if (nilai < 21) {
+					document.myform.hasil.value = "E";
+				}else if(nilai < 41){
+					document.myform.hasil.value = "D";
+				}else if(nilai < 61){
+					document.myform.hasil.value = "C";
+				}else if(nilai < 81){
+					document.myform.hasil.value = "B";
+				}else if(nilai < 101){
+					document.myform.hasil.value = "A";
+				}else{
+					document.myform.hasil.value = "Error";
+				}
+			}else{
+				document.myform.hasil.value = "Error";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="" method="POST" name="myform">
+		<h3>Masukkan Nilai anda</h3>
+		Nilai : <input type="text" name="hitung_ipk" size="5">
+		<br><br>
+		<input type="button" name="hitung" value="hitung" onclick="ipk();">
+		<br><br>
+		Hasil :<input type="text" name="hasil" size="20">
+	</form>
+</body>
+</html>
